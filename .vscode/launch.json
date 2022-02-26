@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringActivemqCamelDemoApplication<svc-a>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.springactivemqcameldemo.SpringActivemqCamelDemoApplication",
+            "projectName": "svc-a",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringActivemqCamelDemoApplication<svc-b>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.springactivemqcameldemo.SpringActivemqCamelDemoApplication",
+            "projectName": "svc-b",
+            "args": ""
+        }
+    ]
+}
