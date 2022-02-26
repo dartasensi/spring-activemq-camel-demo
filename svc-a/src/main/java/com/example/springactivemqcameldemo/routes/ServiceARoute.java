@@ -14,10 +14,10 @@ public class ServiceARoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        // every 10 sec (10000 msec)
-        from("timer:my-activemq-timer?period=10000")
-                .bean(counter)
-                // .log("${body}")
+        // every 5 sec (5000 msec)
+        from("timer:my-activemq-timer?period=5000")
+                .bean(counter, "getTimedCount")
+                .log("${body}")
                 .to("activemq:my-activemq-queue");
     }
 

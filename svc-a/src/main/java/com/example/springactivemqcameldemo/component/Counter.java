@@ -1,5 +1,7 @@
 package com.example.springactivemqcameldemo.component;
 
+import java.time.LocalDateTime;
+
 import org.springframework.stereotype.Component;
 
 @Component
@@ -10,4 +12,7 @@ public class Counter {
         return "Count is " + c++;
     }
 
+    public String getTimedCount() {
+        return LocalDateTime.now() + " count: " + c++;
+    }
 }
